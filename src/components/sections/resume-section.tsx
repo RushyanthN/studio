@@ -5,39 +5,45 @@ import { Briefcase, GraduationCap, Download, CodeXml, Palette, Database, Server,
 
 const experiences = [
   {
-    role: "Senior Software Engineer",
-    company: "Tech Solutions Inc.",
-    period: "2020 - Present",
-    description: "Led development of a new SaaS platform, improving performance by 30%. Mentored junior developers and championed best practices in code quality and testing.",
+    role: "Research Data Scientist",
+    company: "Indiana University, COMET Lab",
+    period: "Aug 2024 - May 2025",
+    description: "Architected a MySQL-backed ETL pipeline, integrated LLMs into automated query-generation workflows, and designed over 60 benchmarking experiments for SQL query evaluation.",
   },
   {
-    role: "Software Developer",
-    company: "Innovate Co.",
-    period: "2018 - 2020",
-    description: "Developed and maintained features for a large-scale e-commerce application. Collaborated with cross-functional teams to deliver high-quality software on schedule.",
+    role: "Data Analyst",
+    company: "Virgen Verse",
+    period: "Feb 2022 - Nov 2023",
+    description: "Automated ETL pipelines, designed Tableau dashboards, and conducted A/B tests that improved VR app retention by 12%. Applied NLP for sentiment analysis on social media data.",
+  },
+  {
+    role: "Freelance Quantitative Data Analyst",
+    company: "Algorithmic Trading Projects",
+    period: "Jan 2020 - Feb 2022",
+    description: "Designed and deployed 10+ algorithmic trading strategies in Python, achieving backtested annualized returns of 12-18%. Built a vectorized backtesting engine and automated P&L dashboards.",
   },
 ];
 
 const education = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "University of Technology",
-    period: "2016 - 2018",
+    degree: "M.S. Applied Data Science",
+    institution: "Indiana University, Indianapolis",
+    period: "2025",
   },
   {
-    degree: "Bachelor of Science in Information Systems",
-    institution: "State College",
-    period: "2012 - 2016",
+    degree: "B.Tech Electronics & Communication Engineering",
+    institution: "Sreenidhi Institute of Science and Technology",
+    period: "2022",
   },
 ];
 
 const skills = [
-  { name: "Frontend Development", icon: <Palette /> },
-  { name: "Backend Development", icon: <CodeXml /> },
-  { name: "Database Management", icon: <Database /> },
-  { name: "DevOps & CI/CD", icon: <Server /> },
-  { name: "Cloud Computing", icon: <Cloud /> },
-  { name: "Data Analytics", icon: <BarChartBig /> },
+  { name: "Programming & Data Analysis", icon: <CodeXml /> },
+  { name: "Cloud & Big Data", icon: <Cloud /> },
+  { name: "Data Engineering", icon: <Database /> },
+  { name: "MLOps & Deployment", icon: <Server /> },
+  { name: "Machine Learning & AI", icon: <BarChartBig /> },
+  { name: "Visualization & BI", icon: <Palette /> },
 ];
 
 export function ResumeSection() {

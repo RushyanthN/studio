@@ -16,7 +16,7 @@ const initialState: ActionState = {};
 export function HeroSection() {
   const [state, formAction] = useFormState(generateTaglineAction, initialState);
   const [displayedTagline, setDisplayedTagline] = useState(
-    "A Full-Stack Developer passionate about building modern web applications."
+    "Data Scientist with 3+ years of experience in data science, analytics, and applied ML."
   );
   const formRef = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
@@ -40,7 +40,7 @@ export function HeroSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 text-center lg:text-left">
           <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter">
-            Jane Doe
+            Rushyanth Nerellakunta
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
             {displayedTagline}

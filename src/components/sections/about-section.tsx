@@ -22,10 +22,10 @@ export function AboutSection() {
         <div className="md:col-span-2 space-y-4">
           <h2 className="text-3xl font-bold font-headline tracking-tight">About Me</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I'm a passionate and results-driven full-stack developer with a knack for creating dynamic, user-friendly web applications. With a foundation in computer science and years of hands-on experience, I've honed my skills in both front-end and back-end technologies.
+            Data Scientist with 3+ years of experience spanning data science, analytics, engineering, and applied ML, skilled in Python, SQL, AWS, Spark, mathematics, statistics, and machine learning.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            My journey in tech is fueled by a constant desire to learn and innovate. I thrive in collaborative environments and am always eager to take on new challenges that push the boundaries of what's possible. When I'm not coding, you can find me exploring new hiking trails or experimenting with new recipes in the kitchen.
+           Experienced in building ETL pipelines, orchestrating cloud-based workflows, with a proven record of delivering time-series forecasting, NLP, and visualization solutions across academia, startups, and freelance projects. AWS Certified Machine Learning Engineer – Associate with a demonstrated ability to translate complex data into scalable, business-impactful solutions.
           </p>
         </div>
       </div>
