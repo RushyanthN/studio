@@ -10,19 +10,19 @@
     --card-foreground: 0 0% 98%;
     --popover: 222 84% 4.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 177 100% 35%; /* Viridis - Teal */
+    --primary: 140 70% 45%; /* Green */
     --primary-foreground: 215 28% 17%;
-    --secondary: 229 45% 42%; /* Viridis - Indigo */
+    --secondary: 25 90% 55%; /* Orange */
     --secondary-foreground: 0 0% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20% 65%;
-    --accent: 57 97% 50%; /* Viridis - Yellow */
+    --accent: 50 100% 50%; /* Yellow */
     --accent-foreground: 24 9.8% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 255 255% 255% / 0.2; /* Semi-transparent white for borders */
     --input: 255 255% 255% / 0.1;
-    --ring: 177 100% 35%; /* Viridis - Teal */
+    --ring: 140 70% 45%; /* Green */
     --radius: 0.75rem;
   }
 }
