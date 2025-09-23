@@ -68,9 +68,9 @@
   }
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(-45deg, hsl(218, 93%, 95%), hsl(210, 80%, 97%), hsl(220, 90%, 96%), hsl(218, 93%, 95%));
+    background: linear-gradient(-45deg, hsl(218, 93%, 85%), hsl(210, 80%, 87%), hsl(220, 90%, 86%), hsl(231, 48%, 78%));
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
   }
 
   @keyframes gradient {
