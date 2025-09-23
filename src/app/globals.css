@@ -93,4 +93,19 @@
   .bg-gradient-cyan-magenta {
     background: linear-gradient(45deg, #00ffff, #ff00ff);
   }
+
+  .section-title {
+    @apply text-4xl font-bold mb-12;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    perspective: 1000px;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
 }
