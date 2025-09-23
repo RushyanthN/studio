@@ -1,42 +1,6 @@
 {
   "placeholderImages": [
     {
-      "id": "project-1",
-      "description": "A modern web application dashboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1550999280-b8a04844e8e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3ZWIlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzU4NjAxNzQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "web dashboard"
-    },
-    {
-      "id": "project-2",
-      "description": "A mobile app for productivity.",
-      "imageUrl": "https://images.unsplash.com/photo-1758598304771-7537765dca55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2JpbGUlMjBwcm9kdWN0aXZpdHl8ZW58MHx8fHwxNzU4NjUxMjkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mobile productivity"
-    },
-    {
-      "id": "project-3",
-      "description": "An e-commerce website for a fashion brand.",
-      "imageUrl": "https://images.unsplash.com/photo-1629828367197-023c0839beba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFzaGlvbiUyMGVjb21tZXJjZXxlbnwwfHx8fDE3NTg1OTU3NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion ecommerce"
-    },
-    {
-      "id": "project-4",
-      "description": "A data visualization project showing market trends.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3NTg1ODc0OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data visualization"
-    },
-    {
-      "id": "project-5",
-      "description": "A branding project for a new coffee shop.",
-      "imageUrl": "https://images.unsplash.com/photo-713623069163-ea2448e9d5ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29mZmVlJTIwYnJhbmRpbmd8ZW58MHx8fHwxNzU4NjUxMjkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coffee branding"
-    },
-    {
-      "id": "project-6",
-      "description": "A travel blog with stunning photography.",
-      "imageUrl": "https://images.unsplash.com/photo-1657639466571-15adb5ab7bea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJhdmVsJTIwYmxvZ3xlbnwwfHx8fDE3NTg2NTEyOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "travel blog"
-    },
-    {
       "id": "profile",
       "description": "A professional and friendly portrait.",
       "imageUrl": "https://storage.googleapis.com/project-spark-308151978241.appspot.com/a42b1029-79f4-4050-b0c3-9828e833e791",
