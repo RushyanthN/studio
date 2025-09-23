@@ -8,11 +8,13 @@ const EducationCard = ({ degree, university, year, gpa }: { degree: string, univ
   </div>
 );
 
-const CertificationCard = ({ title, issuer }: { title: string, issuer: string }) => (
-  <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl transition-all duration-300 hover:bg-cyan-400/10 hover:-translate-y-2 max-w-md mx-auto">
-    <h4 className="font-bold text-2xl text-white">🏆 {title}</h4>
-    <p className="text-cyan-400">{issuer}</p>
-  </div>
+const CertificationCard = ({ title, issuer, url }: { title: string, issuer: string, url: string }) => (
+    <a href={url} target="_blank" rel="noopener noreferrer" className="block transition-all duration-300 hover:-translate-y-2">
+        <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl max-w-md mx-auto hover:bg-cyan-400/10">
+            <h4 className="font-bold text-2xl text-white">🏆 {title}</h4>
+            <p className="text-cyan-400">{issuer}</p>
+        </div>
+    </a>
 );
 
 export function AboutSection() {
@@ -25,7 +27,7 @@ export function AboutSection() {
         <ScrollFadeIn>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-300 mb-10">
-              I&apos;m a Data Scientist with 3+ years of experience spanning data science, analytics, engineering, and applied ML. Currently pursuing my M.S. in Applied Data Science at Indiana University, I&apos;m skilled in Python, SQL, AWS, and machine learning with a proven track record of delivering impactful solutions across academia, startups, and algorithmic trading. I&apos;m AWS Certified Machine Learning Engineer – Associate with expertise in building ETL pipelines, orchestrating cloud workflows, and translating complex data into scalable business solutions.
+              I&apos;m a Data Scientist with 3+ years of experience spanning data science, analytics, engineering, and applied ML. As a recent graduate with an M.S. in Applied Data Science from Indiana University, I&apos;m skilled in Python, SQL, AWS, and machine learning with a proven track record of delivering impactful solutions across academia, startups, and algorithmic trading. I&apos;m an AWS Certified Machine Learning Engineer – Associate with expertise in building ETL pipelines, orchestrating cloud workflows, and translating complex data into scalable business solutions.
             </p>
             <div className="mb-12">
               <h3 className="text-cyan-400 mb-5 text-3xl font-bold">Education</h3>
@@ -49,6 +51,7 @@ export function AboutSection() {
               <CertificationCard 
                 title="AWS Certified Machine Learning Engineer – Associate"
                 issuer="Amazon Web Services"
+                url="https://www.credly.com/badges/00e0554f-08f5-4514-832f-2731734cecf3/public_url"
               />
             </div>
           </div>
