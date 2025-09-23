@@ -10,19 +10,19 @@
     --card-foreground: 0 0% 98%;
     --popover: 222 84% 4.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 25 90% 55%; /* Orange */
+    --primary: 187 100% 50%; /* Cyan */
     --primary-foreground: 215 28% 17%;
-    --secondary: 45 90% 55%; /* A slightly different shade of yellow/gold for secondary */
+    --secondary: 320 100% 50%; /* Magenta */
     --secondary-foreground: 0 0% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20% 65%;
-    --accent: 50 100% 50%; /* Yellow */
+    --accent: 270 100% 50%; /* Purple (as an intermediate for gradients) */
     --accent-foreground: 24 9.8% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 255 255% 255% / 0.2; /* Semi-transparent white for borders */
     --input: 255 255% 255% / 0.1;
-    --ring: 25 90% 55%; /* Orange */
+    --ring: 187 100% 50%; /* Cyan */
     --radius: 0.75rem;
   }
 }
@@ -76,7 +76,7 @@
   }
 
   .text-gradient-cyan-magenta-yellow {
-      background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+      background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--secondary)));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
