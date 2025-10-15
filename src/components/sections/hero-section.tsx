@@ -14,7 +14,7 @@ export function HeroSection() {
           Transforming data into intelligent solutions that drive business impact
         </p>
         <Button asChild size="lg" className="bg-gradient-cyan-magenta text-white font-bold rounded-full py-4 px-8 transition-transform duration-300 hover:scale-105 shadow-[0_10px_30px_rgba(0,255,255,0.3)] hover:shadow-[0_20px_40px_rgba(0,255,255,0.5)]">
-          <a href="#about">Learn More About Me</a>
+          <a href="#about">View My Work</a>
         </Button>
       </div>
     </section>

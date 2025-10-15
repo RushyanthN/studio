@@ -3,6 +3,20 @@ import { ProjectCard } from '../common/project-card';
 
 const projects = [
     {
+      icon: '🏥',
+      title: 'AI Health Insurance Platform',
+      description: 'Developed a multi-agent AI platform for health insurance recommendations in California, featuring web scraping for real-time data, ML-powered suggestions, and advanced cost analysis.',
+      stats: [{ label: 'Full-stack AI' }, { label: 'Multi-agent' }, { label: 'Real-time Data' }],
+      tech: ['Python', 'FastAPI', 'Scikit-learn', 'XGBoost', 'Playwright', 'Docker'],
+    },
+    {
+      icon: '😊',
+      title: 'Face Recognition with CNNs',
+      description: 'Developed a face identification pipeline using CNNs, benchmarking multiple architectures and optimizers to improve accuracy from 3% to over 70%.',
+      stats: [{ label: '70%+ Accuracy' }, { label: '4 CNN Architectures' }, { label: 'Computer Vision' }],
+      tech: ['PyTorch', 'CNN', 'Data Augmentation', 'Python'],
+    },
+    {
       icon: '🤖',
       title: 'GenAI Financial Doc Assistant',
       description: 'Built an intelligent pipeline to parse SEC 10-K filings into structured Q&A format using advanced RAG architecture, dramatically improving analyst productivity.',
@@ -36,13 +50,6 @@ const projects = [
       description: 'Built ensemble models on large-scale banking data with comprehensive feature analysis, delivering actionable insights that significantly improved campaign performance.',
       stats: [{ label: '92% Accuracy' }, { label: '450K Rows' }, { label: '45% Conversion Boost' }],
       tech: ['Logistic Regression', 'Decision Trees', 'Feature Engineering', 'Python'],
-    },
-    {
-      icon: '🗺️',
-      title: 'Sales Territory Heatmap',
-      description: 'Created geospatial revenue visualization identifying market opportunities and optimization strategies, resulting in measurable sales growth.',
-      stats: [{ label: '7% Sales Uplift' }, { label: 'Geospatial' }, { label: 'ZIP Code Analysis' }],
-      tech: ['Power BI', 'Geospatial', 'Data Viz', 'Analytics'],
     },
     {
       icon: '🔬',
