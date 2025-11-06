@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: portfolio-nextjs
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
+    healthCheckPath: /
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
+
+

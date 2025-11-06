@@ -7,9 +7,10 @@ type ProjectCardProps = {
   description: string;
   stats: { label: string }[];
   tech: string[];
+  company?: string;
 };
 
-export const ProjectCard = ({ icon, title, description, stats, tech }: ProjectCardProps) => {
+export const ProjectCard = ({ icon, title, description, stats, tech, company }: ProjectCardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -47,7 +48,12 @@ export const ProjectCard = ({ icon, title, description, stats, tech }: ProjectCa
         <div className="project-icon text-2xl w-12 h-12 rounded-lg flex items-center justify-center mr-4 bg-gradient-cyan-magenta">
           {icon}
         </div>
-        <div className="project-title text-xl font-bold text-white">{title}</div>
+        <div className="flex-1">
+          <div className="project-title text-xl font-bold text-white">{title}</div>
+          {company && (
+            <div className="text-cyan-400 text-sm mt-1 font-medium">{company}</div>
+          )}
+        </div>
       </div>
       <div className="project-description text-gray-300 mb-5">{description}</div>
       <div className="project-stats flex flex-wrap gap-2 mb-5">

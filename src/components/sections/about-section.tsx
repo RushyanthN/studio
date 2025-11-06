@@ -26,9 +26,18 @@ export function AboutSection() {
         </ScrollFadeIn>
         <ScrollFadeIn>
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-300 mb-10">
-              I&apos;m a Data Scientist with 3+ years of experience spanning data science, analytics, engineering, and applied ML. As a recent graduate with an M.S. in Applied Data Science from Indiana University, I&apos;m skilled in Python, SQL, AWS, and machine learning with a proven track record of delivering impactful solutions across academia, startups, and algorithmic trading. I&apos;m an AWS Certified Machine Learning Engineer – Associate with expertise in building ETL pipelines, orchestrating cloud workflows, and translating complex data into scalable business solutions.
-            </p>
+            <div className="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-2xl mb-10 text-left">
+              <h3 className="text-2xl font-bold text-gradient-cyan-white mb-4">Professional Summary</h3>
+              <p className="text-lg text-gray-300 mb-4">
+                I&apos;m a Data Scientist and Machine Learning Engineer with 3+ years of experience building predictive models, automating data pipelines, and deploying production-scale ML systems. I have a strong background in statistical modeling, experimentation, and optimization.
+              </p>
+              <p className="text-lg text-gray-300 mb-4">
+                My hands-on expertise spans Python, SQL, PyTorch, and AWS cloud services, with domain experience in healthcare, finance, and consumer analytics. I&apos;ve proven my ability to design and operationalize end-to-end ML solutions, conduct A/B testing, develop recommendation systems, and apply causal inference for business impact.
+              </p>
+              <p className="text-lg text-gray-300">
+                I&apos;m adept at collaborating with cross-functional teams to translate data insights into strategic decisions, and I&apos;m currently spearheading AI-powered voice interaction systems at Kahana.
+              </p>
+            </div>
             <div className="mb-12">
               <h3 className="text-cyan-400 mb-5 text-3xl font-bold">Education</h3>
               <div className="grid md:grid-cols-2 gap-8">

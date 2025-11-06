@@ -3,40 +3,52 @@ import { ProjectCard } from '../common/project-card';
 
 const experiences = [
   {
+    icon: '🚀',
+    title: 'AIML Engineer',
+    company: 'Kahana | Aug 2025 – Present',
+    description: 'Spearheading development of an AI-powered interaction layer on top of Firefox, enabling users to control and navigate the browser through natural voice commands. Integrating real-time speech-to-text transcription using Deepgram and Gemini APIs. Leveraging AWS Lambda for scalable serverless functions and AWS Cognito for secure authentication.',
+    stats: [
+      { label: '35% Token Reduction' },
+      { label: 'Voice-Controlled Browser' },
+      { label: 'Low-Latency Responses' },
+    ],
+    tech: ['Python', 'AWS Lambda', 'AWS Cognito', 'Deepgram', 'Gemini API', 'LLMs'],
+  },
+  {
     icon: '🔬',
     title: 'Research Data Scientist',
     company: 'Indiana University, COMET Lab | Aug 2024 – May 2025',
-    description: 'Architected MySQL-backed ETL pipelines and integrated LLMs (LLaMA, OpenAI) for automated SQL query generation, reducing analytics turnaround by 40%. Designed 60+ benchmarking experiments improving pipeline accuracy from 78% to 92%.',
+    description: 'Engineered ETL pipelines and modeled structured/unstructured research data, reducing analytics turnaround time by 40%. Executed 60+ ML benchmarking experiments, improving SQL translation model accuracy from 78% to 92%. Built prompt-engineering pipelines using LLaMA and OpenAI models, increasing automation efficiency.',
     stats: [
       { label: '40% Time Reduction' },
       { label: '92% Pipeline Accuracy' },
       { label: '60+ Experiments' },
     ],
-    tech: ['MySQL', 'LLMs', 'Streamlit', 'Python'],
+    tech: ['MySQL', 'LLMs', 'LLaMA', 'OpenAI', 'Tableau', 'Python'],
   },
   {
     icon: '📊',
     title: 'Data Analyst',
-    company: 'Virgen Verse | Feb 2022 – Nov 2023',
-    description: 'Automated ETL pipelines using Python, Airflow, and Snowflake, cutting refresh latency by 40%. Deployed 10+ Tableau dashboards reducing reporting time from 3 days to 3 hours. Conducted A/B tests driving 12% VR app retention improvement.',
+    company: 'Virgenverse | Feb 2022 – Nov 2023',
+    description: 'Developed churn prediction and forecasting models using Python and SQL, reducing customer churn by 8%. Automated ETL pipelines, improving refresh reliability and cutting manual effort by 40%. Designed and analyzed A/B and multivariate tests for marketing and pricing optimization. Delivered Tableau dashboards visualizing product performance and retention metrics.',
     stats: [
-      { label: '40% Latency Reduction' },
-      { label: '10+ Dashboards' },
-      { label: '12% Retention Boost' },
+      { label: '8% Churn Reduction' },
+      { label: '40% Effort Reduction' },
+      { label: 'A/B Testing' },
     ],
-    tech: ['Python', 'Airflow', 'Snowflake', 'Tableau'],
+    tech: ['Python', 'SQL', 'Airflow', 'Snowflake', 'Tableau', 'A/B Testing'],
   },
   {
     icon: '📈',
-    title: 'Freelance Quantitative Data Analyst',
-    company: 'Algorithmic Trading | Jan 2020 – Feb 2022',
-    description: 'Designed 10+ algorithmic trading strategies using LSTM deep learning and time-series models, achieving 12-18% backtested returns. Built vectorized backtesting engine reducing evaluation time by 40% with 25% drawdown reduction.',
+    title: 'Algorithmic Trader & Data Analyst',
+    company: 'Independent | Jan 2020 – Feb 2022',
+    description: 'Built predictive time series forecasting models (ARIMA, SARIMA, LSTM) and signal-based engines for financial datasets. Conducted quantitative risk assessments and "what-if" scenario modeling to optimize portfolio performance. Automated ingestion and ETL processes, improving reporting speed and model reliability.',
     stats: [
-      { label: '12-18% Returns' },
-      { label: '10+ Strategies' },
-      { label: '25% Drawdown Reduction' },
+      { label: 'Time Series Models' },
+      { label: 'Risk Assessment' },
+      { label: 'Automated ETL' },
     ],
-    tech: ['Python', 'LSTM', 'SARIMA', 'NumPy'],
+    tech: ['Python', 'LSTM', 'ARIMA', 'SARIMA', 'NumPy', 'Pandas'],
   },
 ];
 
