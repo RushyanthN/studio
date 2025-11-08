@@ -6,20 +6,17 @@ import { ExperienceSection } from '@/components/sections/experience-section';
 import { ProjectsSection } from '@/components/sections/projects-section';
 import { ContactSection } from '@/components/sections/contact-section';
 import { Footer } from '@/components/sections/footer';
-import { AnimatedBackground } from '@/components/common/animated-background';
-import { ScrollFadeIn } from '@/components/common/scroll-fade-in';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <AnimatedBackground />
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main>
         <HeroSection />
-        <AboutSection />
-        <SkillsSection />
         <ExperienceSection />
+        <SkillsSection />
         <ProjectsSection />
+        <AboutSection />
         <ContactSection />
       </main>
       <Footer />

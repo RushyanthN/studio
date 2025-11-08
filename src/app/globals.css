@@ -4,26 +4,48 @@
 
 @layer base {
   :root {
-    --background: 222 84% 4.9%; /* Dark Blue/Black */
-    --foreground: 0 0% 98%; /* White/Light Gray */
-    --card: 255 255% 255% / 0.1; /* Semi-transparent white */
+    --background: 0 0% 96%; /* Light Gray */
+    --foreground: 222 47% 11%; /* Dark text */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 217 91% 60%; /* Blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 142 76% 36%; /* Green */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%; /* Dark background */
+    --foreground: 0 0% 98%; /* Light text */
+    --card: 222 47% 15%;
     --card-foreground: 0 0% 98%;
-    --popover: 222 84% 4.9%;
+    --popover: 222 47% 15%;
     --popover-foreground: 0 0% 98%;
-    --primary: 187 100% 50%; /* Cyan */
-    --primary-foreground: 215 28% 17%;
-    --secondary: 320 100% 50%; /* Magenta */
-    --secondary-foreground: 0 0% 98%;
-    --muted: 217.2 32.6% 17.5%;
+    --primary: 217 91% 60%; /* Blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 142 76% 36%; /* Green */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 217 32% 17%;
     --muted-foreground: 215 20% 65%;
-    --accent: 270 100% 50%; /* Purple (as an intermediate for gradients) */
-    --accent-foreground: 24 9.8% 10%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 255 255% 255% / 0.2; /* Semi-transparent white for borders */
-    --input: 255 255% 255% / 0.1;
-    --ring: 187 100% 50%; /* Cyan */
-    --radius: 0.75rem;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 217 32% 25%;
+    --input: 217 32% 25%;
+    --ring: 217 91% 60%;
   }
 }
 
@@ -36,22 +58,12 @@
   }
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a3a 25%, #0f3460 50%, #1a1a3a 75%, #0a0a0a 100%);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    background: hsl(var(--background));
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    25% { background-position: 100% 50%; }
-    50% { background-position: 100% 100%; }
-    75% { background-position: 0% 100%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  @keyframes glow {
-      from { filter: brightness(1); }
-      to { filter: brightness(1.2); }
+  .dark body {
+    background: hsl(var(--background));
   }
 
   .fade-in {
@@ -65,47 +77,47 @@
       transform: translateY(0);
   }
 
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .text-rotate {
+    animation: slideUp 0.6s ease;
+  }
+
 }
 
 @layer utilities {
-  .text-gradient-cyan-magenta {
-    background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .text-primary-blue {
+    color: hsl(var(--primary));
   }
 
-  .text-gradient-cyan-magenta-yellow {
-      background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--secondary)));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: glow 3s ease-in-out infinite alternate;
+  .text-primary-green {
+    color: hsl(var(--secondary));
   }
 
-  .text-gradient-cyan-white {
-    background: linear-gradient(45deg, hsl(var(--primary)), #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .bg-primary-blue {
+    background-color: hsl(var(--primary));
   }
 
-  .bg-gradient-cyan-magenta {
-    background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)));
+  .bg-primary-green {
+    background-color: hsl(var(--secondary));
   }
 
   .section-title {
-    @apply text-4xl font-bold mb-12;
+    @apply text-4xl font-bold mb-12 text-foreground;
   }
 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
-    perspective: 1000px;
-  }
-
-  .transform-style-3d {
-    transform-style: preserve-3d;
+    gap: 2rem;
   }
 }

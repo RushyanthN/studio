@@ -11,18 +11,18 @@ const skills = [
 ];
 
 const SkillCard = ({ title, content }: { title: string, content: string }) => (
-    <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl transition-all duration-300 hover:bg-cyan-400/10 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,255,255,0.2)] group">
-        <h4 className="font-bold text-lg text-white mb-3 group-hover:text-cyan-300 transition-colors">{title}</h4>
-        <p className="text-gray-300 text-sm leading-relaxed">{content}</p>
+    <div className="bg-white dark:bg-card border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+        <h4 className="font-bold text-lg text-foreground mb-3">{title}</h4>
+        <p className="text-muted-foreground text-sm leading-relaxed">{content}</p>
     </div>
 );
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="py-24 bg-black/20">
+    <section id="skills" className="py-24">
       <div className="container">
         <ScrollFadeIn>
-          <h2 className="section-title text-gradient-cyan-white">Technical Skills</h2>
+          <h2 className="section-title text-center">Technical Skills</h2>
         </ScrollFadeIn>
         <ScrollFadeIn>
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">

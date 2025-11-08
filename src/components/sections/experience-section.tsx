@@ -58,7 +58,7 @@ export function ExperienceSection() {
     <section id="experience" className="py-24">
       <div className="container">
         <ScrollFadeIn>
-          <h2 className="section-title text-gradient-cyan-white">Professional Experience</h2>
+          <h2 className="section-title text-center">Professional Experience</h2>
         </ScrollFadeIn>
         <div className="projects-grid grid-cols-1">
           {experiences.map((exp, i) => (

@@ -1,19 +1,21 @@
 'use client';
 
 import React from 'react';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Moon, Sun } from 'lucide-react';
+import { useTheme } from '@/contexts/theme-context';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
+  { href: '#about', label: 'About' },
   { href: '#contact', label: 'Contact' },
 ];
 
 export function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -24,30 +26,47 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/95 backdrop-blur-md' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white dark:bg-[#0f172a] shadow-md' : 'bg-transparent'}`}>
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-gradient-cyan-magenta">
+        <div className="text-2xl font-bold text-foreground">
           Rushyanth Nerellakunta
         </div>
-        <div className="flex items-center">
-          <ul className="hidden md:flex items-center space-x-8">
+        <div className="flex items-center gap-8">
+          <ul className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="text-white hover:text-cyan-400 transition-colors duration-300">
+                <a 
+                  href={link.href} 
+                  className="text-foreground hover:text-primary-blue transition-colors duration-200 font-medium"
+                >
                   {link.label}
                 </a>
               </li>
             ))}
           </ul>
-          <div className="hidden md:flex items-center gap-6 ml-8">
-            <a href="https://github.com/RushyanthN" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+          <div className="flex items-center gap-4">
+            <button
+              onClick={toggleTheme}
+              className="text-muted-foreground hover:text-foreground transition-colors p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-label="Toggle theme"
+            >
+              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
+            <a 
+              href="https://github.com/RushyanthN" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Github size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/nerellakunta-rushyanth" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <a 
+              href="https://www.linkedin.com/in/nerellakunta-rushyanth" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Linkedin size={20} />
-            </a>
-            <a href="https://medium.com/@rushyanth55" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5.12 11.23a.79.79 0 0 0-.21.57v.4a.83.83 0 0 0 .21.58l4.89 4.89 4.89-4.89a.83.83 0 0 0 .21-.58v-.4a.79.79 0 0 0-.21-.57L10 6.34zM22 7h-2.13a.47.47 0 0 0-.47.47v10.15a.47.47 0 0 0 .47.47H22a.47.47 0 0 0 .47-.47V7.47A.47.47 0 0 0 22 7zM16.8 7h-2.13a.47.47 0 0 0-.47.47v10.15a.47.47 0 0 0 .47.47h2.13a.47.47 0 0 0 .47-.47V7.47a.47.47 0 0 0-.47-.47z"/></svg>
             </a>
           </div>
         </div>

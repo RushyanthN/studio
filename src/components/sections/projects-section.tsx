@@ -76,10 +76,10 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-24 bg-black/20">
+    <section id="projects" className="py-24">
       <div className="container">
         <ScrollFadeIn>
-          <h2 className="section-title text-gradient-cyan-white">Featured Projects</h2>
+          <h2 className="section-title text-center">Featured Projects</h2>
         </ScrollFadeIn>
         <div className="projects-grid">
           {projects.map((proj, i) => (
