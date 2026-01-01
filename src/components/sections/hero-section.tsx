@@ -20,6 +20,7 @@ const rotatingTexts = [
   'Predict',
   'Automate',
   'Optimize',
+  'Repeat'
 ];
 
 export function HeroSection() {
