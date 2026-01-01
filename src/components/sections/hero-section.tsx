@@ -79,7 +79,7 @@ export function HeroSection() {
                 <a href="#contact">Get In Touch</a>
               </Button>
               <Button asChild size="lg" className="bg-primary-green text-white hover:opacity-90">
-                <a href="/RushyanthNerellakunta.pdf" download>
+                <a href="/RushyanthNerellakunta_MachineLearningEngineer_Resume.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
