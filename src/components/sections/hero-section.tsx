@@ -60,14 +60,14 @@ export function HeroSection() {
             
             <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 px-4 py-2 rounded-full">
               <span className="text-sm font-medium text-foreground">
-                AIML Engineer • Data Scientist • ML Engineer • AWS Certified
+                Machine Learning Engineer • GenAI Specialist • RAG Architect • AWS Certified
               </span>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-              Crafting intelligent systems with AI, ML, Deep Learning, and Computer Vision. 
-              Designed to enhance performance, scale through robust ML pipelines, and drive business 
-              value through automation, improved models, and intelligent decision-making.
+              Building production-grade intelligent systems, from voice-driven browser interfaces to RAG-based Q&A pipelines. 
+              Expert in LLM orchestration, multi-agent systems, and MLOps, with proven track record of architecting scalable 
+              GenAI solutions and translating complex AI capabilities into customer-facing products.
             </p>
 
             <div className="flex flex-wrap gap-4">

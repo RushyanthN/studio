@@ -29,13 +29,10 @@ export function AboutSection() {
             <div className="bg-white dark:bg-card border border-gray-200 dark:border-gray-700 rounded-lg p-8 mb-10 text-left shadow-sm">
               <h3 className="text-2xl font-bold text-foreground mb-4">Professional Summary</h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                I&apos;m a Data Scientist and Machine Learning Engineer with 3+ years of experience building predictive models, automating data pipelines, and deploying production-scale ML systems. I have a strong background in statistical modeling, experimentation, and optimization.
+                Machine Learning Engineer with 3+ years of experience building production-grade intelligent systems, from voice-driven browser interfaces to RAG-based Q&A pipelines. Proven track record of architecting scalable GenAI solutions on AWS, improving SQL generation accuracy from 78% to 92%, and reducing data pipeline latency by 40%.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                My hands-on expertise spans Python, SQL, PyTorch, and AWS cloud services, with domain experience in healthcare, finance, and consumer analytics. I&apos;ve proven my ability to design and operationalize end-to-end ML solutions, conduct A/B testing, develop recommendation systems, and apply causal inference for business impact.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                I&apos;m adept at collaborating with cross-functional teams to translate data insights into strategic decisions, and I&apos;m currently spearheading AI-powered voice interaction systems at Kahana.
+                Expert in LLM orchestration, multi-agent systems, and MLOps, with hands-on experience deploying models using PyTorch, LangChain, and cloud platforms. Strong collaborator skilled at translating complex AI capabilities into customer-facing products and actionable business insights.
               </p>
             </div>
             <div className="mb-12">

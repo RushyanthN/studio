@@ -1,13 +1,15 @@
 import { ScrollFadeIn } from '../common/scroll-fade-in';
 
 const skills = [
-    { title: "Programming & Analysis", content: "Python, SQL, R, Bash, C++, JavaScript, Git" },
-    { title: "Machine Learning & Deep Learning", content: "PyTorch, TensorFlow, W&B, GANs, CNN, RNN, ANN, NLP (spaCy, NLTK)" },
-    { title: "GenAI & LLMs", content: "OpenAI, Gemini, Claude APIs, Transformers, BERT, LangChain, LangGraph, RAG, Fine-Tuning, ChromaDB, Pinecone" },
-    { title: "Backend & Cloud", content: "FastAPI, Flask, Docker, Kubernetes, CI/CD, Airflow, AWS (SageMaker, S3, Lambda, CloudWatch, Cognito), Spark, Snowflake" },
-    { title: "Data Engineering & MLOps", content: "ETL Pipelines, Data Modeling, Feature Engineering, MLflow, Model Monitoring, A/B Testing" },
-    { title: "Visualization & BI", content: "Tableau, Power BI, Plotly, Streamlit, Excel, Power Automate" },
+    { title: "Programming & Analysis", content: "C, C++, Python, R, SQL, Bash, UNIX, JavaScript, Git" },
+    { title: "Machine Learning & Deep Learning", content: "Supervised & Unsupervised Learning, Deep Learning (CNN, RNN, Transformers, GANs, ANN), NLP, Recommendation Systems, PyTorch, TensorFlow, Hugging Face Transformers, spaCy, NLTK" },
     { title: "ML Algorithms", content: "Linear/Logistic Regression, Decision Trees, Random Forest, XGBoost, LightGBM, K-Means, KNN, SVM, Time Series (ARIMA, SARIMA, LSTM)" },
+    { title: "GenAI & LLMs", content: "OpenAI, Gemini, Claude APIs, Transformers, BERT, LangChain, LangGraph, RAG, Fine-Tuning, Multi-Agent Systems, Google ADK, MCP (Model Context Protocol), ChromaDB, Pinecone, Embeddings, Ollama, Llama-3.3-70B-Versatile" },
+    { title: "Data Analytics", content: "Exploratory Data Analysis (EDA), Feature Engineering, Statistical Modeling, Hypothesis Testing, A/B Testing, Data Modeling, Model Monitoring" },
+    { title: "Big Data & Cloud", content: "Apache Spark, Hadoop, AWS (SageMaker, S3, Lambda, CloudWatch, Cognito), SQL & NoSQL Databases, ETL Pipelines, Data Warehousing (Snowflake, Redshift), Azure ML, GCP Vertex AI" },
+    { title: "Backend & MLOps", content: "FastAPI, Flask, Docker, Kubernetes, CI/CD, Apache Airflow, MLflow, Weights & Biases" },
+    { title: "Visualization & BI", content: "Tableau, Power BI, Plotly, Streamlit, Matplotlib, Seaborn, Excel, Power Automate" },
+    { title: "Tools & Version Control", content: "MATLAB, MixPanel, Git, GitHub, CUDA, Jenkins, Visual Studio, JIRA" },
 ];
 
 const SkillCard = ({ title, content }: { title: string, content: string }) => (

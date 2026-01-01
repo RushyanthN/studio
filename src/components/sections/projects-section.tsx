@@ -3,6 +3,20 @@ import { ProjectCard } from '../common/project-card';
 
 const projects = [
     {
+      icon: '📄',
+      title: 'Modular RAG with Agentic Routing and Self-Correction for Financial Document Analysis',
+      description: 'Built a production-grade RAG pipeline over Apple and Tesla SEC 10-K filings, processing 3,751 financial documents (2,016 pages + 1,735 tables) and enabling natural-language Q&A with source-level citations across multi-year reports. Implemented hierarchical chunking with 6,068 parent chunks (2,048 chars) and 20,300 child chunks (512 chars), improving retrieval recall while reducing context fragmentation by 40% and achieving 95% answer accuracy on complex financial queries. Developed LLM-driven query expansion using RAG Fusion and step-back prompting, generating multiple semantic variants per query and fusing results via Reciprocal Rank Fusion, improving retrieval recall by 35% while reducing irrelevant results by 50%. Applied a two-stage retrieval pipeline with bi-encoder semantic search (BGE-base-en-v1.5) followed by cross-encoder re-ranking (BGE-reranker-large) and diversity filtering, achieving 0.92+ relevance scores and improving answer completeness by 30%.',
+      stats: [{ label: '95% Answer Accuracy' }, { label: '35% Recall Improvement' }, { label: '3,751 Documents' }],
+      tech: ['Python', 'ChromaDB', 'Sentence-Transformers', 'LangChain', 'Ollama', 'PyTorch', 'PyMuPDF', 'pdfplumber'],
+    },
+    {
+      icon: '⚡',
+      title: 'SparkFlow — Streamlined Machine Learning with Apache Spark',
+      description: 'Built an end-to-end distributed ML pipeline in Apache Spark ML implementing Linear Regression, Logistic Regression, K-Means, and LDA, with automated JSON metrics logging for reproducible experiment tracking. Trained a Linear Regression model on a 692-dimensional feature space (80/20 split), achieving R² = 0.73, RMSE = 0.26, and MSE = 0.068. Developed a binary Logistic Regression classifier on 692-dimensional sparse vectors, achieving 100% accuracy / precision / recall / F1 with AUC-ROC = 1.0 on the test set. Implemented K-Means with k comparison (k=2 vs k=3), improving WSSSE from 0.12 → 0.075 (37.5% better) and generating automated cluster distribution summaries. Built an LDA topic modeling pipeline extracting 10 topics, comparing hyperparameters across k=[5,10], and reporting perplexity (k=5: 2.78, k=10: 3.10) plus log-likelihood for model selection.',
+      stats: [{ label: '100% Classifier Accuracy' }, { label: 'R² = 0.73' }, { label: '37.5% WSSSE Improvement' }],
+      tech: ['Python', 'Apache Spark', 'PySpark', 'Spark MLlib', 'Spark SQL', 'Jupyter Notebook', 'Pandas', 'NumPy'],
+    },
+    {
       icon: '🏥',
       title: 'Healthcare AI Agent (RAG System)',
       description: 'Designed a multi-agent architecture using LangChain + ChromaDB to recommend personalized health insurance plans. Improved factual accuracy by 27% through advanced RAG techniques and real-time data integration.',

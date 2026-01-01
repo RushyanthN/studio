@@ -16,7 +16,7 @@ export function Footer() {
           </a>
         </div>
         <p className="text-muted-foreground">&copy; {new Date().getFullYear()} Rushyanth Nerellakunta. All rights reserved.</p>
-        <p className="text-muted-foreground">Indianapolis, IN | rushyanth55@gmail.com | +1 (317) 935-0710</p>
+        <p className="text-muted-foreground">Indianapolis, IN, USA | rushyanth.work@gmail.com | (317) 935-0710</p>
       </div>
     </footer>
   );

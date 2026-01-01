@@ -45,12 +45,12 @@ export function ContactSection() {
       form.reset();
     } catch (error) {
       // Fallback to mailto if API fails
-      const mailtoLink = `mailto:rushyanth55@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+      const mailtoLink = `mailto:rushyanth.work@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
       window.location.href = mailtoLink;
       
       toast({
         title: "Opening Email Client",
-        description: "Please send your message through your email client, or contact me directly at rushyanth55@gmail.com",
+        description: "Please send your message through your email client, or contact me directly at rushyanth.work@gmail.com",
       });
     } finally {
       setIsSubmitting(false);
