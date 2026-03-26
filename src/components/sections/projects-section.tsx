@@ -3,6 +3,33 @@ import { ProjectCard } from '../common/project-card';
 
 const projects = [
     {
+      icon: '🧬',
+      title: 'Medical QA — LLM Fine-Tuning Pipeline',
+      company: 'Jan 2026',
+      description:
+        'Fine-tuned Microsoft Phi-3 Mini (3.8B) on 5,000 medical Q&A samples using 4-bit QLoRA (Unsloth), training only 1.47% of parameters (29.9M) on a single T4 GPU in under 90 minutes and demonstrating parameter-efficient fine-tuning at scale. Achieved +23% ROUGE-1, +126% ROUGE-2, +42% ROUGE-L, and BERTScore F1 gain from 0.826 → 0.848 vs. the base model across 50 held-out test samples, with evaluation fully automated.',
+      stats: [{ label: 'QLoRA 1.47% Params' }, { label: '<90 min on T4' }, { label: 'BERTScore F1 0.848' }],
+      tech: ['Hugging Face', 'PyTorch', 'Unsloth', 'Microsoft Phi-3', 'LoRA'],
+    },
+    {
+      icon: '🎯',
+      title: 'Hybrid Recommendation System',
+      company: 'Mar 2026',
+      description:
+        'Built a production-grade two-stage retrieve-then-rank pipeline: FAISS ANN retrieval at 50M+ vector scale → LightGBM re-ranking, with cold-start fallbacks, MMR diversity controls, and IPS-weighted bias mitigation, serving personalized recommendations under 100ms. Designed end-to-end MLOps: Prefect-orchestrated training (Spark ALS, two-tower, GRU), Feast feature store, MLflow experiment tracking, Evidently drift detection, and Kubernetes deployment with Prometheus/Grafana observability.',
+      stats: [{ label: '<100ms Serving' }, { label: '50M+ Vectors' }, { label: 'Full MLOps Stack' }],
+      tech: ['Python', 'PyTorch', 'FAISS', 'LightGBM', 'Kafka', 'Kubernetes', 'Redis'],
+    },
+    {
+      icon: '📷',
+      title: 'Real-Time Object Detection System',
+      company: 'Mar 2026',
+      description:
+        'Reduced end-to-end pipeline latency from ~1,855,000ms (backlogged queue) to ~282ms — about a 6,575× improvement — by redesigning Kafka consumer offset management and deploying on Kubernetes with Horizontal Pod Autoscaler (1→3 pods at 70% CPU). Trained YOLOv8s on COCO128 with MLflow tracking and served inference through FastAPI for low-latency, observable production traffic.',
+      stats: [{ label: '6,575× Latency Win' }, { label: 'YOLOv8 + Kafka' }, { label: 'K8s + HPA' }],
+      tech: ['YOLOv8', 'Kafka', 'Kubernetes', 'FastAPI', 'MLflow'],
+    },
+    {
       icon: '📄',
       title: 'Modular RAG with Agentic Routing and Self-Correction for Financial Document Analysis',
       description: 'Built a production-grade RAG pipeline over Apple and Tesla SEC 10-K filings, processing 3,751 financial documents (2,016 pages + 1,735 tables) and enabling natural-language Q&A with source-level citations across multi-year reports. Implemented hierarchical chunking with 6,068 parent chunks (2,048 chars) and 20,300 child chunks (512 chars), improving retrieval recall while reducing context fragmentation by 40% and achieving 95% answer accuracy on complex financial queries. Developed LLM-driven query expansion using RAG Fusion and step-back prompting, generating multiple semantic variants per query and fusing results via Reciprocal Rank Fusion, improving retrieval recall by 35% while reducing irrelevant results by 50%. Applied a two-stage retrieval pipeline with bi-encoder semantic search (BGE-base-en-v1.5) followed by cross-encoder re-ranking (BGE-reranker-large) and diversity filtering, achieving 0.92+ relevance scores and improving answer completeness by 30%.',
